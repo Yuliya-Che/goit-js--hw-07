@@ -24,7 +24,7 @@ pictureGallery.style.justifyContent = "space-around";
 
 
 const imgElem = images.map((elem) => {
-  return `<li><img src="${elem.url}" alt="${elem.alt}" width="100%"></li>`;
+  return `<li><img src="${elem.url}" alt="${elem.alt}"></li>`;
 });
 pictureGallery.insertAdjacentHTML("beforeend", imgElem.join(""));
 console.log(imgElem);
