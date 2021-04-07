@@ -18,13 +18,13 @@ const images = [
 
 const pictureGallery = document.getElementById("gallery");
 pictureGallery.style.listStyleType = "none";
-pictureGallery.style.display = "flex";
-pictureGallery.style.alignItems = "center";
-pictureGallery.style.justifyContent = "space-between";
 pictureGallery.style.border = "5px dashed teal";
+pictureGallery.style.display = "flex";
+pictureGallery.style.justifyContent = "space-around";
+
 
 const imgElem = images.map((elem) => {
-  return `<li><img src="${elem.url}" alt="${elem.alt}" width="450"></li>`;
+  return `<li><img src="${elem.url}" alt="${elem.alt}" width="100%"></li>`;
 });
 pictureGallery.insertAdjacentHTML("beforeend", imgElem.join(""));
 console.log(imgElem);
